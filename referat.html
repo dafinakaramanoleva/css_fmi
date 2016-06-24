@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>css basics</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="#">css basics</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#hero">Начало</a></li>
+              <li class="current"><a class="smoothscroll" href="#portfolio">Какво е CSS?</a></li>
+		          <li class="current"><a class="smoothscroll" href="#services">Cascading?</a></li>
+		          <li><a class="smoothscroll" href="#about">Стилове</a></li>
+	            <li><a class="smoothscroll" href="#about_2">Селектори</a></li>
+	            <li><a class="smoothscroll" href="#testimonials">Ресурси.</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->   
+
+	   </div>
+
+   </header> <!-- end header -->
+
+
+   <!-- homepage hero
+   ================================================== -->
+   <section id="hero">	
+   	<div class="overlay"></div>
+		<div class="row hero-content">
+
+			<div class="twelve columns hero-container">
+
+			   <!-- hero-slider start-->
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">CSS: стилове, класове, селектори</h1>	
+				
+								<h3>Реферат по Web технологии<br>
+									Изготвила: Дафина Караманолева, 61695
+								</h3>
+							</div>						
+					   </li>		              
+
+				   </ul>
+
+			   </div> <!-- end hero-slider -->				   
+
+	      </div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#services">Още<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage hero -->
+
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+			<h1>Какво е CSS<span>?<span></h1>
+
+			<hr />               
+
+			<p>CSS (Cascading Style Sheets) е език за описание на стилове (език за стилови листове, style sheet language) – използва се основно за описване на представянето на документ, написан на език за маркиране. Най-често се използва заедно с HTML, но може да се приложи върху произволен XML документ. Официално спецификацията на CSS се поддържа от W3C.</p>
+
+			<p>CSS е създаден с цел да бъдат разделени съдържанието и структурата на уеб страниците отделно от тяхното визуално представяне. Преди стандартите за CSS, установени от W3C през 1995 г., съдържанието на сайтовете и стила на техния дизайн са писани в една и съща HTML страницата. В резултат на това HTML кода се превръща в сложен и нечетлив, а всяка промяна в проекта на даден сайт изисквала корекцията да бъде нанасяна в целия сайт страница по страница. Използвайки CSS, настройките за форматиране могат да бъдат поставени в един единствен файл, и тогава промяната ще бъде отразена едновременно на всички страници, които използват този CSS файл.</p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+   </section> <!-- end portfolio -->
+
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Стилизиране с Cascading Style Sheets<span>.</span></h1>
+
+	         <hr />      
+	         <code>
+	            p{font-size: 12px;}<br>
+	            p{font-size: 14px;}<br>
+	            &lt;p&gt;My Headline&lt;p&gt;<br>
+           	 </code>
+	         
+
+	         <p>Интересна е думата Cascade, тъй като останалото е ясно на всички – документ със стилове. Каскадно комбиниране на различни стилови шаблони означава нещо като каращи се стилови документи, тъй като повече от един стил може да бъде поставен на конкретен html код от раазлични CSS документи. Поради това е нужно да има начин за детерминиране на кой определен стил да бъде приложен. Избраното правило е точно каскадното избиране от по-общите и по-специфичните стилове – най-специфичното правило на стил бива избрано.</p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-whole s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+                <div id="team-wrapper" class="bgrid s-bgrid-third tab-bgrid-half mob-bgrid-whole group">
+					<div class="member-pic">
+					<img src="images/proximity.gif" alt=""/>
+		         	<div class="mask"></div>       	
+		           </div>
+
+     			 </div>
+		   	</div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end services -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Различни начини за добавяне на стилове<span>.</span></h1>
+
+	         <hr />     	    
+
+	         <p>Съществуват три начина, по които можете да обогатите своя HTML със CSS:вътрешен, външен и инлайн поставен скрипт.</p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">       	
+
+      	<div class="process bgrid-third tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+			      <h3>Вграден стил на елемента</h3>	
+
+			      <p>Зададеният по този начин стил се нарича inline. Представлява записване на стилова информация в атрибута style на даден таг. Полученият стил е валиден директно само за елемента, на който е зададен (въпреки това негови поделементи могат да го наследят при определени условия). Този метод има редица ограничения, тъй като не позволява използването на CSS селектори.</p>
+
+			      <code>
+			      	&lt;h2 style="color:red;"&gt;This is a red heading&lt;/h2&gt;
+			      </code>
+
+		   	</div>
+
+      		<div class="bgrid">
+
+			     	<h3>Блок със стилове в документа</h3>
+
+			     	<p>Зададеният по този начин стил се нарича internal. Представлява блок със стилове, затворен в таг &lt;style&gt;. Този таг трябва да е поставен в заглавната част на HTML документа (тага &lt;head&gt;).</p>
+			     	<code>
+			     		&lt;style type="text/css"&gt;<br>
+							Add style rules here<br>
+						&lt;/style&gt;
+			     	</code>	
+
+		      </div> 
+
+		      <div class="bgrid">
+
+			     	<h3>Файл със стилове</h3>	
+
+			     	<p>Зададеният по този начин стил се нарича external. Представлява самостоятелен файл, който се състои от стилове и към него е направено обръщение в HTML документа. Това е единственият способ, който отговаря на идеята за отделяне на съдържание от оформление. Указването на такъв файл се случва между &lt;head&gt; таговете и има следният синтаксис: Могат да бъдат вкарани неограничен брой файла, но е препоръчително броят им да е максимално ограничен, заради бавното зареждане на уеб страницата.</p>
+			     	<code>
+			     		&lt;link rel="stylesheet" type="text/css" href="mystyles.css"&gt;
+			     	</code>
+
+		      </div>
+
+      	</div> <!-- end process -->      	
+
+     	</div> <!-- end row -->          
+
+   </section> <!-- end about -->
+
+   <section id="about_2">
+
+      <div class="row team section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>CSS Селектори<span>.</span></h1>
+
+	         <hr />	         
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+
+         <div id="team-wrapper" class="bgrid-third s-bgrid-third tab-bgrid-half mob-bgrid-whole group">
+
+            <div class="bgrid member">
+
+    					<div class="member-pic">
+    					<img src="images/id.png" alt=""/>
+             	<div class="mask"></div>       	
+               </div>
+               <div class="member-name">
+                  <h3>По ID атрибут</h3>
+               </div>
+
+               <p>Чрез ID селекторите могат да се декларират допълнителни параметри, които не са указани в декларираните класове. Разбира се същия ефект може да се постигне и чрез деклариране на нов клас, но за по-голямо удобство това може да стане чрез ID селектор.Синтаксисът на ID селектора е <br>#id {атрибут: стойност} /или също селектор#id {атрибут: стойност}/</p>
+              
+
+             </div> <!-- end member -->
+
+            <div class="bgrid member">
+								
+					<div class="member-pic">
+                  <img src="images/class.png" alt=""/>
+               	<div class="mask"></div>  
+               </div>
+               <div class="member-name">
+                  <h3>По име на клас</h3>
+               </div>
+
+               <p>CSS позволява да задавате собствени класове за различните селектори. След като един клас е дефиниран, после всички селектори, на които е присвоен този клас, ще показват един и същ ефект. По-долу е показан един практичен пример.Синтаксиса на класовите селектори е <br> селектор.клас {атрибут: стойност} </p>
+
+              
+
+            </div> <!-- end member -->
+
+            <div class="bgrid member">
+								
+					<div class="member-pic">
+						<img src="images/name.png" alt=""/>
+                 	<div class="mask"></div>                          	
+               </div>
+               <div class="member-name">
+                  <h3>По име на HTML елемент</h3>
+               </div>
+
+               <p>Когато искаме да селектираме чрез HTML таг. Начина на изписване се прави като напишем името на тага последвано от свойство и стойност. Например искаме всички input елементи да са с отстояние 3px.<br>
+               	селектор {атрибут: стойност}
+               </p>
+
+              
+
+     			</div> <!-- end member -->
+
+         </div> <!-- end team-wrapper -->
+
+      </div> <!-- end row -->    
+
+	   <div class="row section-ads">
+
+	      <div class="twelve columns">
+
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+
+			     <h1>Групиране<span>.</span></h1>
+
+			     <hr />	         
+				<p>
+					За да бъде намален размера на CSS файловете, обработваните елементи имат възможността да се групират по свойства резделени със запетая
+				</p>
+				<code>
+					h1, h2, h3 { font-family: helvetica; }
+				</code>
+				<p>
+					По подобен начин могат да бъдат групирани и декларациите:
+				</p>
+				<code>
+					h1 { </br>
+					  font-weight: bold; </br>
+					  font-size: 12pt;</br>
+					  line-height: 14pt; </br>
+					  font-family: helvetica; </br>
+					  font-variant: normal;</br>
+					  font-style: normal;</br>
+					}
+				</code>
+
+				<p>Овен това някои CSS свойства могат да бъдат групирани по определен начин, който в примера е еквивалентен на горния: </p>
+
+				<code>
+					h1 { font: bold 12pt/14pt helvetica }
+				</code>
+			  </div>
+
+			</div> <!-- end section-head -->		         		
+		    
+
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+
+				     <h1>Наследяване<span>.</span></h1>
+
+				     <hr />	    
+
+				     <p>За да обявним най-просто и разбираемо наследяването в CSS ще използваме пример. Представете си че на даден h1 елемент е зададен син цвят и в него е поставен наклонен елемент (em) </p>
+				     <code>
+				     	&lt;h1&gt;CSS Tutorial &lt;em&gt;FMI&lt;em&gt; &lt;h1&gt;
+
+				     </code>	
+				     <p>Ако на em тага не е зададен специфично друг цвят, то той ще наследи цвета на родителския елемент - както и в случая. Други такива свойства, които се наследяват от родителските елементи са font-family, font-size и т.н.</p> 
+
+				     <p>За да се зададе свойство по подразбиране за даден HTML документ може да се използва body тага, който е родител на всеки един елемент в даден документ.</p>
+
+				     <code>
+				     	body { color: black; }
+				     </code>
+				     <p>
+				     	Горният пример действа дори и когато body тага е пропуснат, защото HTML парсера ще изгърми при опит за зареждане на страница без body елемент.
+				     </p>
+				     <p>
+				     	Някои стилови свойства не се наследяват от дъщерния елемент на родителски елемент. Най-често се подразбира защо се получава така. Например, свойството background не се наследява, но фона на родителските елементи се вижда по подразбиране. 
+				     </p>
+				     <p>
+				     	Често, стойността на свойство е изразена с процент, който се отнася за друго свойство: 
+				     </p>
+				    <code>
+						P { font-size: 10pt }</br>
+						P { line-height: 120% }  /* отнася се за font-size, т.е. 12pt */
+					</code>	
+					<p>
+						За всяко свойство, което позволява процентни стойности е дефинирано това за кой елемент се отнася. Дъщерните елементи на p ще наследят изчислената стойност на line-height(т.е. 12pt), а не процентната. 
+					</p>
+			  	</div>
+			  
+			</div> <!-- end section-head -->		         		
+		    
+
+				
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+
+					<h1>Контекстни селектори<span>.</span></h1>
+
+					<hr />	  
+					<p>
+						С функцията за наследяване дизайнерите на уеб страници и приложения могат да пестят доста време и място в техните файлове. Вместо да се пишат всички стилови свойства на всеки отделен елемент, могат да бъдат зададени такива по подразбиране и след това да се отделят изключенията от тях. За да бъде зададен различен цвят на span елементите във всички параграфи, може да бъде зададен следния код:
+					</p>
+					<code>
+						p { color: blue } </br>
+						span { color: red }
+					</code>
+
+					<p>
+						Когато се приложи съответния стилов файл всички елементи span, които се намират вътре или извън p елементите, ще бъдат визуализирани с червен цвят. Ако от задачата се иска червени да бъдат span елементите само вътре в параграфите, може да се използва следното: 
+					</p>
+					<code>
+						p span { color: red }
+					</code>
+
+					<p>
+						Селекторът в този си вид е шаблон за търсене в стека на отворените елементи и този тип селектори се наричат контекстови селектори. Те се състоят от няколко на брой обикновени селектори, които се разделят с интервал. Селектират се само елементи, които отговарят на последния прост селектор, в нашия случай span елемента, при това само ако шаблона за търсене пасва. Контектовите селектори в CSS търсят родителски вързки, но не само - например родителски дъщерен обект може да бъде представен по различен начин. В горепосочения пример шаблона за търсене пасва, ако span елемента е потомък на p елемента, т.е. ако той се намира вътре в него.
+					</p>
+					<code>
+						ul li { font-size: 12px; }
+						ul ul li { font-size: 10px; }
+					</code>
+
+					<p>
+						Тук първият селектор пасва на li елементи с поне един ul родителски елемент. Вторият селектор пасва на подмножество на първия, т.е. на li елементи с поне два родителски ul елемента.
+					</p>
+
+					<p>
+						Контекстовите селектори могат да се дефинират по тип на елементите, класови атрибути, ID атрибути или комбинация от тях.
+					</p>
+					<code>
+						p span {color: red; }</br>
+						.class h1 { backround: red; }</br>
+						#myID span {font-size: 16px; } </br>
+						div.content h1 {font: 12px sans-serif; }
+					</code>
+
+					<p>
+						Първият селектор пасва на всички span елементи, които се събържат в родителски елемент - параграф. Вторият селектор селектира всички h1 тагове, намиращи се в елемент с клас class и т.н.
+					</p>
+					<p>Няколко контекстни селектора могат да бъдат групирани в една декларация: </p>
+					<code>
+						h1 span, h2 em, h1 em, h2 span { color: red; }
+					</code>
+					<p>Което е еквивалентно на: </p>
+					<code>
+						h1 span { color: red } </br>
+						h1 em { color: red } </br>
+						h2 span { color: red } </br>
+						h2 em { color: red } </br>
+					</code>
+
+			  	</div>
+
+			</div>
+				
+
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+
+					<h1>Псевдо-класове и псевдо-елементи<span>.</span></h1>
+
+					<hr />	         
+
+					<p>В CSS1, стила обикновено се прикачва на елемент в зависимост от неговата позиция в структурата на документа. Този прост модел е задоволителен при множество стилове, но не покрива някои често срещани ефекти. Концепцията за псевдо-класовете и псевдо-елементите разширява адресирането в CSS1, така че да може процеса на форматиране да бъде повлиян от външна информация.</p>
+
+					<p>Псевдо-класовете и псевдо-елементите могат да бъдат използвани в CSS селекторите, но не съществуват в HTML сорс кода. Вместо това, те се вмъкват от браузъра при специфични условия, така че да може да бъдат адресирани в стиловите листа. Те се определят като "класове" и "елементи", тъй като това е удобен начин да бъде описано тяхното поведение. По-специфичния термин, с който се дефинира тяхното поведение е измислена поредица от тагове.</p>
+
+					<p>Псевдо-елементите се използват за адресиране на подразделения на елементи, докато псевдо-класовете позволяват на стиловите листа да различават различните типове елементи.</p>
+				
+			  	</div>
+			</div>
+				
+			<div class="row team section-head">
+
+				<div class="twelve columns">
+
+			     	<h1>Псевдо-класове за връзки(котви)<span>.</span></h1>
+
+			     	<hr />	         
+
+			     	<p>Браузърите често визуализират наскоро посетените връзки по по-различен начин от по-старите такива. В CSS1, този процес може да бъде управляван чрез псевдо-класове на елемента а:</p>
+
+					<code>
+						a:link { color: red }       /* непосетени линкове */</br>
+						a:visited { color: blue }   /* посетени линкове */</br>
+						a:active { color: lime }    /* активни линкове */
+					</code>
+
+					<p>
+					Всички елементи 'а', които се намират в атрибута 'href' ще бъдат поставени в една и само една от тези групи(например целевите котви няма да бъдат засегнати). Браузърите може да решат да преместят даден елемент от 'visited' на 'link' след определен период от време. Активната('active') връзка е тази, която е избрана в момента(например чрез натискане на бутона на мишката) от читателя.<p>
+
+					<p>Форматирането на псевдо-класа за връзки се осъществява сякаш класа е бил вмъкнат ръчно. От браузъра не се изисква да преформатира текущо показания документ, поради промените на псевдо-класа за връзки. Например, стилов лист може(по напълно допустим начин) да зададе по-голяма стойност за атрибута 'font-size' на 'active' връзка, от колкото тази за 'visited' връзка, но от браузъра не се изисква динамично да преформатира документа, когато читателя селектира 'visited' връзката.</p>
+
+					<p>Псевдо-класовете селектори не пасват на нормалните класове и обратно. Стиловото правило в примера по-долу следователно няма да окаже никакво влияние:</p>
+
+					<code>
+						a:link { color: red }</br>
+						&lt;a class="link" name="target_1" &gt;...&lt;a&gt;
+					</code>
+					
+					<p>В CSS1, псевдо-класовете за връзки нямат ефект върху елементи, различни от 'a'. Следователно типа на елемента може да бъде пропуснат в селектора:</P>
+					<code>
+						a:link { color: red }</br>
+						:link { color: red }
+					</code>
+
+					<p>Горните селектори ще селектират едни и същи елементи в CSS1.</p>
+
+					<p>В имената на псевдо-класовете няма значение дали буквите са малки или главни, т.е. те не ги различават.</p>
+
+					<p>Псевдо-класовете могат да бъдат използвани в контекстови селектори:</p>
+
+					<code>
+						a:link IMG { border: solid blue }
+					</code>
+					
+					<p>Също така, псевдо-селекторите могат да бъдат комбинирани с нормални класове:</p>
+
+					<code>
+						a.external:visited { color: blue }
+						&lt;a class="external" href="http://out.side/" &gt;External link&lt;a&gt;
+					</code>
+					<p>Ако връзката в горния пример е посетена(visited), тя ще бъде визуализирана в син цвят. Нужно е да се отбележи, че имената на класовете предшестват тези на псевдо-класовете в селекторите.
+					</p>
+			  	</div>
+			</div>
+
+
+		   </div>
+
+	   </div> <!-- end section-ads -->		         	         
+   </section>  
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="row content">
+
+      <h1>Изпозлвани ресурси</h1>
+      <p>
+      	<ul>
+      		<li>http://cssway.thebigerns.com/special/master-item-styles/</li>
+      		<li>http://www.w3schools.com/css/default.asp</li>
+      		<li>https://en.wikipedia.org/wiki/Cascading_Style_Sheets</li>
+      		<li>http://telerikacademy.com/Courses/Courses/Details/231</li>
+      		<li>https://css-tricks.com/pseudo-class-selectors/</li>
+      		<!-- <li>https://www.w3.org/2006/02/cssbg.html</li> -->
+      	</ul>
+      </p>
+
+      </div> <!-- end row -->
+
+   </section> <!-- end testimonials section -->  
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+      		
+		
+
+    
+
+            <div class="info">
+
+            	<div class="footer-logo">Изготвен от: Дафина Караманолева 61695, СИ 3 курс, 2 админ. група</div>
+
+	            <p>
+	            	CSS: стилове, класове, селектори<br>
+	            	Реферат по Web технологии
+	            </p>	        
+
+	         </div>
+
+      	</div>           
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
